@@ -55,7 +55,7 @@ $(function() {
         //test whether or not the menu starts off as hidden
 
         it('starts off hidden by default', function() {
-            expect(body).hasClass('menu-hidden');
+            expect(body.attr('class')).hasClass('menu-hidden');
         });
 
          /* TODO: Write a test that ensures the menu changes
@@ -66,9 +66,9 @@ $(function() {
         it('changes visiblity when clicked', function() {
             let icon = $('.icon-list');
             icon.click();
-            expect(body).to.hasClass('menu-hidden');
+            expect(body.attr('class').not.hasClass('menu-hidden');
             icon.click();
-            expect(body).to.hasClass('menu-hidden');
+            expect(body.attr('class').hasClass('menu-hidden');
         });
     });
 
