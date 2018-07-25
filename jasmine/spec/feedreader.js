@@ -48,10 +48,13 @@ $(function() {
 
     describe('The Menu', function() {
 
+        //grab the <body> element
+        
+        let body = $('body');
         //test whether or not the menu starts off as hidden
 
         it('starts off hidden by default', function() {
-            expect($('body').hasClass('menu-hidden')).toBe(true);
+            expect(body.hasClass('menu-hidden')).toBe(true);
         });
 
          /* TODO: Write a test that ensures the menu changes
