@@ -55,7 +55,7 @@ $(function() {
         //test whether or not the menu starts off as hidden
 
         it('starts off hidden by default', function() {
-            expect(body.attr('class')).hasClass('menu-hidden');
+            expect(body.hasClass('menu-hidden')).toBe(true);
         });
 
          /* TODO: Write a test that ensures the menu changes
@@ -66,9 +66,9 @@ $(function() {
         it('changes visiblity when clicked', function() {
             let icon = $('.icon-list');
             icon.click();
-            expect(body.attr('class').not.hasClass('menu-hidden');
+            expect(body.hasClass('menu-hidden')).not.toBe(true);
             icon.click();
-            expect(body.attr('class').hasClass('menu-hidden');
+            expect(body.hasClass('menu-hidden')).toBe(true);
         });
     });
 
@@ -82,7 +82,7 @@ $(function() {
         });
         
         it('has at least one entry after loadFeed', function(done) {
-            let feed = document.querySelectorAll('.entry');
+            let feed = $('.entry');
             expect(feed.length).not.toBe(0);
             done();
         });
@@ -92,18 +92,17 @@ $(function() {
     //new suite to test contents of feed change when new feed is selected
 
     describe('Feed Changes', function() {
-        let feed1,
-            feed2;
+        let feed0,
+            feed1;
 
         beforeEach(function(done) {
-            loadFeed(0);
-            feed1 = $('.header-title')[0].textContent;
+            feed0 = $('.entry-link').attr('href');
             loadFeed(1, done);
         });
 
         it('content changes', function(done) {
-            feed2 = $('.header-title')[0].textContent;
-            expect(feed1).not.toBe(feed2);
+            feed1 = $('.entry-link').attr('href');
+            expect(feed0).not.toBe(feed1);
             done();
         });
     });
