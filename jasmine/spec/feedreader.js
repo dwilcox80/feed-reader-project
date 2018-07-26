@@ -64,7 +64,7 @@ $(function() {
         it('changes visiblity when clicked', function() {
             let icon = $('.icon-list');
             icon.click();
-            expect(body.hasClass('hidden')).not.toBe(true);
+            expect(body.hasClass('menu-hidden')).not.toBe(true);
             icon.click();
             expect(body.hasClass('menu-hidden')).toBe(true);
         });
@@ -80,7 +80,7 @@ $(function() {
         });
         
         it('has at least one entry after loadFeed', function(done) {
-            let feed = $('.entry');
+            let feed = $('.feed .entry');
             expect(feed.length).not.toBe(0);
             done();
         });
