@@ -23,4 +23,4 @@ There are two different ways to run these tests:
 
 ### Option 2-
 		You can click the link that I've hosted here:
-		<a href="https://dwilcox80.github.io/feed-reader-project/" target="_blank">https://dwilcox80.github.io/feed-reader-project/</a>
+		https://dwilcox80.github.io/feed-reader-project/
