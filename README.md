@@ -14,13 +14,14 @@ on the link below.
 ## How to run this test
 There are two different ways to run these tests:
 
-### Option 1-
-		Click "Clone in Desktop" / "Download ZIP"
-		Once cloned/downloaded, open the folder
-		Open the index.html file in your preferred browser
-		There test results are at the bottom of the screen.  For fun, try changing
-		some of the areas that are being tested up to see how it affects the specs
+### Option 1
+1. Click "Clone in Desktop" / "Download ZIP"
+2. Once cloned/downloaded, open the folder
+3. Open the index.html file in your preferred browser
+4. The test results are at the bottom of the screen.  
 
-### Option 2-
-		You can click the link that I've hosted here:
-		https://dwilcox80.github.io/feed-reader-project/
+_For fun, try changing some of the areas that are being tested up to see how it affects the specs_
+
+### Option 2
+You can click the link that I've hosted here:
+<a href="https://dwilcox80.github.io/feed-reader-project/" target="_blank">https://dwilcox80.github.io/feed-reader-project/</a>
